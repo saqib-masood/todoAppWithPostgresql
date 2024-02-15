@@ -1,0 +1,14 @@
+version: "3"
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: Delhi@2001
+      POSTGRES_USER: postgres
+      POSTGRES_DB: todo
+      
+  
+  app:
+    image: my-node-app
+    ports:
+    - 13000:3001
